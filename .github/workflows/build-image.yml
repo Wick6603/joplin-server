@@ -1,6 +1,7 @@
 name: Build Container Images
 
 on:
+  workflow_dispatch: # 手动在 GitHub Actions 页面点击运行
   push:
     tags:
       - 'v*.*.*'
