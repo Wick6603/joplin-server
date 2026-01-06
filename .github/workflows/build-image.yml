@@ -55,7 +55,7 @@ jobs:
           context: ./joplin/
           file: ./${{ matrix.dockerfile }}
           # platforms: linux/amd64,linux/arm64,linux/arm/v7
-          platforms: ${{ matrix.platform }}
+          platforms: linux/arm
           labels: ${{ steps.meta.outputs.labels }}
           outputs: type=image,"name=${{ env.GHCR_REPO }}",push-by-digest=true,name-canonical=true,push=true
 
