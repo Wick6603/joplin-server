@@ -33,7 +33,7 @@ jobs:
       - name: Checkout Joplin Server
         uses: actions/checkout@v6
         with:
-          repository: laurent22/joplin
+          repository: Wick6603/joplin
           ref: server-${{ env.RELEASE_VERSION }}
           path: joplin
 
